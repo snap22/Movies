@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Movies
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sakila
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+  flyway:
+    url: jdbc:postgresql://localhost:5432/sakila
+    user: admin
+    password: admin
+    locations: classpath:db/migration
